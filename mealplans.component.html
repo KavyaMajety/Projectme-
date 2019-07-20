@@ -1,8 +1,22 @@
 <h1 class="display-4" style = "color:#343a40"><b>Welcome to the MealPlans Hub</b></h1>
 <div class="jumbotron">
   </div>
+  <div class="form-group">
+        <label for="comment">Enter your Ideas!</label>
+        <br/>
+        Name:- <input class="form-control" rows="5" id="comment" [(ngModel)] = "FoodNutrition.description">
+        Type:- <input class="form-control" rows="5" id="comment" [(ngModel)] = "FoodNutrition.description">
+        Duration:- <input class="form-control" rows="5" id="comment" [(ngModel)] = "FoodNutrition.description">
+       Description:- <input class="form-control" rows="5" id="comment" [(ngModel)] = "FoodNutrition.description">
+       Fats:- <input class="form-control" rows="5" id="comment" [(ngModel)] = "FoodNutrition.description">
+       Protiens:- <input class="form-control" rows="5" id="comment" [(ngModel)] = "FoodNutrition.description">
+       Carbohydrates:- <input class="form-control" rows="5" id="comment" [(ngModel)] = "FoodNutrition.description">
+       Fibre:- <input class="form-control" rows="5" id="comment" [(ngModel)] = "FoodNutrition.description">
+        <br/>
+        <button type = "button" (click)="addIdea()">Submit my Idea</button>
+      </div>
   <div class="row">
-      <div class="card" style= "height: 1200px; width: 300px">
+      <div class="card" style= "height: 1200x; width: 300x">
             <div class="card-body">
                 <h4><b>Meal Plan</b></h4>
                 <b>Type : Non-Vegetarian</b>
@@ -40,7 +54,7 @@
   
   
   <div class="row">
-      <div class="card" style= "height: 1200px; width: 300px">
+      <div class="card" style= "height: 1200x; width: 300x">
             <div class="card-body">
                 <h4><b>Meal Plan</b></h4>
                 <b>Type : Vegetarian</b>
@@ -79,7 +93,7 @@
   
   
   <div class="row">
-      <div class="card" style= "height: 1200px; width: 300px">
+      <div class="card" style= "height: 1200x; width: 300x">
             <div class="card-body">
                 <h4><b>Meal Plan</b></h4>
                 <b>Type : Non-Vegetarian</b>
@@ -119,7 +133,7 @@
   
   
   <div class="row">
-      <div class="card" style= "height: 1200px; width: 300px">
+      <div class="card" style= "height: 1200x; width: 300px">
             <div class="card-body">
                 <h4><b>Meal Plan</b></h4>
                 <b>Type : Vegan</b>

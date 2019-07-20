@@ -10,15 +10,9 @@ import { MeappService } from '../meapp.service';
 })
 export class FoodandnutritionComponent implements OnInit {
  FoodNutrition : any;
- tip : number;
- likes : number;
- dislikes : number;
- reports : number;
- description : string;
- userId: number;
 
   constructor(private service: MeappService) { 
-    this.FoodNutrition = {tip: '',likes: '', dislikes:'', reports: '', description: '', userId: ''};
+    this.FoodNutrition = {likes: 0, dislikes: 0, reports: 0, description: ''};
   }
 
   ngOnInit() {}

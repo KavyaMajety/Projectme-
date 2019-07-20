@@ -15,6 +15,10 @@ import { FoodandnutritionuserComponent } from './foodandnutritionuser/foodandnut
 import { WorkoutsComponent } from './workouts/workouts.component';
 import { MealplansComponent } from './mealplans/mealplans.component';
 import {HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './profile/profile.component';
+import { WorkoutsuserComponent } from './workoutsuser/workoutsuser.component';
+import { MealplansuserComponent } from './mealplansuser/mealplansuser.component';
+import { BmiPipe } from './bmi.pipe';
 
 const appRoot: Routes=[{path: '', component: HomeComponent},
 {path: 'login', canActivate:[AuthGuard], component: LoginComponent},
@@ -23,7 +27,10 @@ const appRoot: Routes=[{path: '', component: HomeComponent},
   {path: 'foodandnutrition',  canActivate:[AuthGuard], component: FoodandnutritionComponent},
   {path: 'foodandnutritionuser', canActivate:[AuthGuard], component: FoodandnutritionuserComponent},
   {path: 'workouts', canActivate:[AuthGuard], component: WorkoutsComponent},
-  {path: 'mealplans', canActivate:[AuthGuard], component: MealplansComponent}
+  {path: 'mealplans', canActivate:[AuthGuard], component: MealplansComponent},
+  {path: 'profile', canActivate:[AuthGuard], component: ProfileComponent},
+  {path: 'workoutsuser', component: WorkoutsuserComponent},
+  {path: 'mealplansuser', component: MealplansuserComponent}
 ]
 
 @NgModule({
@@ -38,6 +45,10 @@ const appRoot: Routes=[{path: '', component: HomeComponent},
     FoodandnutritionuserComponent,
     WorkoutsComponent,
     MealplansComponent,
+    ProfileComponent,
+    WorkoutsuserComponent,
+    MealplansuserComponent,
+    BmiPipe,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +63,10 @@ const appRoot: Routes=[{path: '', component: HomeComponent},
   {path: 'foodandnutrition', component: FoodandnutritionComponent},
   {path: 'foodandnutritionuser', component: FoodandnutritionuserComponent},
   {path: 'workouts', component: WorkoutsComponent},
-  {path: 'mealplans', component: MealplansComponent}
+  {path: 'mealplans', component: MealplansComponent},
+  {path: 'profile', component: ProfileComponent},
+  {path: 'workoutsuser', component: WorkoutsuserComponent},
+  {path: 'mealplansuser', component: MealplansuserComponent}
    ])
   ],
   providers: [],

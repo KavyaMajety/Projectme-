@@ -22,12 +22,14 @@ export class MeappService {
     }
     addUserIdea(FoodNutrition : any) {
       console.log('Inside Service...',' ', FoodNutrition);
-      return this.httpClient.post('RestAPIk/webapi/myresource/addIdea', FoodNutrition);
+      return this.httpClient.post('RestAPIk/webapi/myresource/userDescription', FoodNutrition);
     }
     getEmpByUserPass(loginId: string, password: string): any {
       console.log('Inside service:' , loginId, password);
-      return this.httpClient.get('RestAPI/webapi/myresource/getEmpByUserPass/' + loginId + '/' + password).toPromise();
+      return this.httpClient.get('RestAPIk/webapi/myresource/getEmpByUserPass/'+loginId+'/'+password).toPromise();
       }
-  }
+    
+    
+}
   
 
